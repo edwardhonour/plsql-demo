@@ -1,0 +1,32 @@
+<div class="container-fluid" style="height:500px;">
+    <div class="row" style="height:800px;">
+        <div class="col-2 p-3"  style="background-color: black;">
+            <app-left-navbar [data]="data" ></app-left-navbar>
+        </div>
+        <div class="col-10">
+            <div class="container mt-3">
+                <div class="card p-4"  style="background-color: lightgrey;">
+                <div class="row">
+                    <h1>Department (aka DEPT)</h1>
+                </div>
+                </div>
+<div class="card mt-3" style="background-color: lightgrey;">
+                <div class="row m-2">
+                    <div class="col-2">Department Number</div>
+                    <div class="col-2"><input (blur)="getDepartmentData()" [(ngModel)]="formData.deptno" class="form-control" type="text"></div>
+                    <div class="col-1"></div>
+                    <div class="col-3">Department Name</div>
+                    <div class="col-3"><input class="form-control" [(ngModel)]="formData.dname" type="text"></div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-1"></div>
+                    <div class="col-3">Location</div>
+                    <div class="col-3"><input class="form-control" [(ngModel)]="formData.loc" type="text"></div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+</div>
